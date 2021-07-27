@@ -1,13 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+:root {
+  --blue: #0b70e1;
+  --orange-dark: #f24c1a;
+  --orange-light: #f9780f;
+  --black: #0a0a0a;
+  --white: #fff;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-family: "Livvic", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.text-orange-dark {
+  color: var(--orange-dark);
+}
+
+.text-orange-light {
+  color: var(--orange-light);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======================= NAVBAR ======================= */
+
+.navbar-brand {
+  width: 11rem;
+}
+
+img {
+  width: 100%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.navbar-nav li {
+  padding: 0 1rem;
+}
+
+.nav-item .nav-link {
+  color: #555 !important;
+  font-weight: 600;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--blue) !important;
+}
+
+/* ===================== HERO SECTION ================ */
+
+.no1 {
+  width: 4rem;
+}
+
+.hero-section {
+  height: 35rem;
+  margin: 3rem 0;
+  background-image: url("https://keenitsolutions.com/products/wordpress/braintech/wp-content/uploads/revslider/home-10/banner-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--black);
+  margin: 2rem 0;
+}
+
+.info p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.info button {
+  border: 0;
+  outline: 0;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+  background: linear-gradient(
+    79deg,
+    rgb(221, 76, 35) 0%,
+    rgb(242, 124, 30) 63%,
+    rgb(242, 124, 30) 100%
+  );
+}
+
+.info button:hover {
+  background: linear-gradient(
+    79deg,
+    rgb(233, 98, 61) 0%,
+    rgb(245, 142, 58) 63%,
+    rgb(241, 139, 54) 100%
+  );
+}
+
+.illustration {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .illustration {
+    display: none;
+  }
+}
+
+/* ======================= SERVICE =================== */
+
+.services {
+  margin: 1rem 0;
+}
+
+.single-service-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.single-service-box img {
+  width: 5.5rem;
+}
+
+.single-service-box h4 {
+  margin: 1.5rem 0;
+}
+
+/* ============== Featchers =================== */
+
+.featcher {
+  margin: 5rem 0;
+}
+
+.fetcher ul {
+  list-style-type: none;
+  transform: translateX(-2rem);
+}
+
+.fetcher li {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.fetcher li:hover {
+  color: #f24c1a;
+}
+
+.check-icon {
+  color: var(--orange-dark);
+  margin-right: 0.8rem;
+  font-size: 2rem;
+}
+
+/* =================== STATUS ================== */
+.status {
+  background-color: #fafcff;
+  padding: 4rem 0;
+}
+
+.status h1 {
+  font-weight: 700;
+}
+
+.status p {
+  font-weight: 600;
+  color: #555;
+}
+
+/* =============== SECTION TITLE ==================== */
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title img {
+  width: 4rem;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+.section-title p {
+  width: 70%;
+  text-align: center;
+}
+
+/* ==================== PORTFOLIO ================== */
+.portfolio {
+  margin: 5rem 0;
+}
+
+.item-info {
+  margin: 1rem 0;
+}
+
+.item-info h4 {
+  text-decoration: underline;
+  transition: all 0.6s ease;
+  font-weight: 600;
+}
+
+.item-info h4:hover {
+  color: var(--blue);
+}
+
+.item-info p {
+  color: var(--blue);
+}
+
+/* ==================== TESTIMONAL ======================= */
+
+.testimonials {
+  background-color: #fafcff;
+  padding: 5rem 0;
+}
+
+.testimonal-item {
+  width: 99%;
+  padding: 2rem;
+}
+
+.testimonal-item h5 {
+  color: #102b3e;
+  font-weight: 600;
+}
+
+.testimonal-item p {
+  color: #777;
+}
+
+.testimonal-item span {
+  color: #ffc62d;
+}
+
+.testimonal-item img:nth-child(1) {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.carsoul {
+  margin: 5rem 0;
+}
+.test-pera {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-pera h6 {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.test-pera img {
+  width: 2rem;
+  margin-top: 1rem;
+}
+
+/* ================= TEAM ====================*/
+
+.team {
+  padding: 3rem 0;
+}
+
+.team-members {
+  margin-top: 3rem;
+}
+
+.single-member {
+  overflow: hidden;
+  margin: 2rem 0;
+  box-shadow: 0 5px 20px rgb(34 34 34 / 10%) !important;
+}
+
+.single-member img {
+  width: 100%;
+}
+
+.single-member h6 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.single-member p {
+  width: 100%;
+  text-align: center;
+}
+
+.single-member h6:hover {
+  color: var(--orange-light);
+}
+
+.single-member div:nth-child(2) {
+  padding: 1rem 0;
+}
+
+/* ================ BLOGS ================ */
+.blogs {
+  padding: 3rem 0;
+  background-color: #f6f7f9;
+}
+
+/* ================= CONTACT ================= */
+
+.container {
+  padding: 3rem 0;
+}
+
+.contact-info {
+  background: linear-gradient(10deg, #00adf9 0%, #0067ea 100%);
+  padding: 5rem 1rem;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.contact-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.sub-contact-infos {
+  margin-top: 2rem;
+}
+
+.single-sub-info {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.single-sub-info h6 {
+  font-weight: 600;
+}
+
+.sub-info-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.sub-info-logo span {
+  color: var(--orange-light);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  padding-left: 4%;
+}
+
+.contact-form img {
+  width: 4rem;
+}
+
+.contact-form h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 1.5rem 0;
+}
+
+.contact-form input,
+textarea {
+  border: 0;
+  outline: 0;
+  background-color: #f6f7f9;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: #999;
+  border-radius: 0.5rem;
+}
+
+.contact-form button {
+  border: 0;
+  outline: 0;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+  margin: 1rem 0;
+  background: linear-gradient(
+    79deg,
+    rgb(221, 76, 35) 0%,
+    rgb(242, 124, 30) 63%,
+    rgb(242, 124, 30) 100%
+  );
+}
+
+.contact-form button:hover {
+  background: linear-gradient(
+    79deg,
+    rgb(233, 98, 61) 0%,
+    rgb(245, 142, 58) 63%,
+    rgb(241, 139, 54) 100%
+  );
 }
